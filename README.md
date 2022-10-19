@@ -1,7 +1,7 @@
 # fibautomata
 
 
-a visualization of the fibonacci 24 as a grid
+a visualization of the fibonacci 24 as a grid, using a summing reduction to a single digit.
 
 https://greggelong.github.io/fibautomata
 
@@ -12,6 +12,17 @@ https://greggelong.github.io/fibautomata/fib60
 
 
 
-If you click the mouse on either it will randomly create two arrays of integers.  Then it will use the same process of  getting the sum of its two immediately previous terms and reducing them to draw the next line.
+If you click the mouse on either it will randomly create two arrays of integers.  Then it will use the same process of  getting the reduced sum of its two immediately previous terms to draw the next line.
 
-See Lucas numbers.
+
+see
+
+https://github.com/greggelong/fib24
+
+
+https://r-knott.surrey.ac.uk/Fibonacci/fibmaths.html
+
+
+https://goldennumber.net/fibonacci-24-pattern
+
+
