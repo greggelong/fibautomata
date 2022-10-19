@@ -21,6 +21,31 @@ function setup() {
   }
 }
 
+function mouseClicked(){
+  randArray();
+  y=0;
+  plotRow();
+  plotRow();
+  for (let i =0; i<58;i++){
+    fibnext();
+    plotRow();
+}
+
+}
+
+function randArray(){
+  a=[];
+  b=[];
+  for (let i=0; i<60; i++){
+    let rn = floor(random(10));
+    print(rn);
+    a.push(rn);
+    b.push(rn);
+
+
+  }
+}
+
 function fibnext(){
   for (let n = 0; n<cols;n++){
     newNum = (a[n]+b[n]);
@@ -56,4 +81,4 @@ function reduce(n){
 
 
     }
-}
+  }
