@@ -17,9 +17,36 @@ function setup() {
   for (let i =0; i<46;i++){
     fibnext();
     plotRow();
-    print(b)
   }
 }
+
+
+
+function mouseClicked(){
+  randArray();
+  y=0;
+  plotRow();
+  plotRow();
+  for (let i =0; i<46;i++){
+    fibnext();
+    plotRow();
+}
+
+}
+
+function randArray(){
+  a=[];
+  b=[];
+  for (let i=0; i<cols; i++){
+    let rn = floor(random(1,10));  // no zeros which would create long red lines
+    //print(rn);
+    a.push(rn);
+    b.push(rn);
+
+
+  }
+}
+
 
 function fibnext(){
   for (let n = 0; n<cols;n++){
@@ -36,7 +63,7 @@ function fibnext(){
 
 function plotRow() {
   for (let i =0; i<cols;i++){
-    print(b[i])
+    //print(b[i])
     fill((b[i]-1),200,200);  // -1 so 1 red is 1 0 in rgb
     rect(i*sz,y*sz,sz,sz);
   }
