@@ -37,7 +37,7 @@ function randArray(){
   a=[];
   b=[];
   for (let i=0; i<60; i++){
-    let rn = floor(random(10));
+    let rn = floor(random(1,10));  // no zeros which would create long red lines
     print(rn);
     a.push(rn);
     b.push(rn);
